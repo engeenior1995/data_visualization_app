@@ -49,7 +49,7 @@ if not st.session_state.logged_in:
     col1, col2 = st.columns(2)
     with col1:
         if st.button("🔐 Go to Login"):
-            st.switch_page("pages/2_🔐_Log_In.py")
+            st.switch_page("pages/login.py")
     with col2:
         if st.button("👤 Continue as Guest"):
             st.session_state.guest_mode = True
@@ -226,10 +226,10 @@ with st.sidebar:
             col1, col2 = st.columns(2)
             with col1:
                 if st.button("Sign Up", key="sidebar_signup", use_container_width=True):
-                    st.switch_page("pages/1_📊_Sign_Up.py")
+                    st.switch_page("pages/signup.py")
             with col2:
                 if st.button("Log In", key="sidebar_login", use_container_width=True):
-                    st.switch_page("pages/2_🔐_Log_In.py")
+                    st.switch_page("pages/login.py")
     
     if st.button("🚪 Logout", key="sidebar_logout", use_container_width=True):
         for key in ['logged_in', 'username', 'guest_mode']:
@@ -268,7 +268,7 @@ if is_guest:
         <h1>📊 Data Analytics Dashboard</h1>
         <p>Welcome, <strong>Guest User</strong>! You have {viz_remaining} free chart visualization(s).</p>
         <div style='background: rgba(255,255,255,0.2); padding: 10px; border-radius: 5px; display: inline-block; margin-top: 10px;'>
-            <small>🎁 Guest Mode | <a href='/1_📊_Sign_Up' style='color: white; text-decoration: underline; font-weight: bold;'>Sign up</a> for unlimited access!</small>
+            <small>🎁 Guest Mode | <a href='/signup' style='color: white; text-decoration: underline; font-weight: bold;'>Sign up</a> for unlimited access!</small>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -423,10 +423,10 @@ def create_chart_interface(df, is_guest=False):
             col1, col2 = st.columns(2)
             with col1:
                 if st.button("📝 Sign Up Now", use_container_width=True):
-                    st.switch_page("pages/1_📊_Sign_Up.py")
+                    st.switch_page("pages/signup.py")
             with col2:
                 if st.button("🔐 Log In", use_container_width=True):
-                    st.switch_page("pages/2_🔐_Log_In.py")
+                    st.switch_page("pages/login.py")
             
             st.markdown("---")
             st.markdown("""

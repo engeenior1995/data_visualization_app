@@ -432,7 +432,7 @@ with col1:
                              type="primary")
     
     if signup_button:
-        st.switch_page("pages/1_📊_Sign_Up.py")
+        st.switch_page("pages/signup.py")
 
 with col2:
     st.markdown("""
@@ -463,7 +463,7 @@ with col2:
                             type="primary")
     
     if login_button:
-        st.switch_page("pages/2_🔐_Log_In.py")
+        st.switch_page("pages/login.py")
 
 with col3:
     st.markdown("""
@@ -498,7 +498,7 @@ with col3:
         st.session_state.guest_mode = True
         st.session_state.logged_in = True
         st.session_state.username = "Guest User"
-        st.switch_page("pages/3_🏠_Home.py")
+        st.switch_page("pages/home.py")
 
 # Add CSS for button animations
 st.markdown("""

@@ -40,4 +40,4 @@ For questions about these terms:
 """)
 
 if st.button("← Back to Dashboard"):
-    st.switch_page("pages/3_🏠_Home.py")
+    st.switch_page("pages/home.py")

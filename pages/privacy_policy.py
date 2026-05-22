@@ -31,4 +31,4 @@ We may update this policy periodically. Continued use of the app constitutes acc
 """)
 
 if st.button("← Back to Dashboard"):
-    st.switch_page("pages/3_🏠_Home.py")
+    st.switch_page("pages/home.py")
