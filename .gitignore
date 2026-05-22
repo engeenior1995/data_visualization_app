@@ -1,0 +1,26 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Streamlit or app-specific logs
+*.log
+
+# User data and uploaded files
+user_data/
+
+# Git metadata
+*.orig
